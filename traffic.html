@@ -1,0 +1,22 @@
+
+<html>
+<head>
+
+<script language="Javascript">MyBanners=new Array('car3.jpg','ccarr.jpg','car1.jpg','ferrari-488-spider.jpg')
+banner=0
+function ShowBanners()
+{ if (document.images)
+{ banner++
+if (banner==MyBanners.length) {
+banner=0}
+document.ChangeBanner.src=MyBanners[banner]
+setTimeout("ShowBanners()",1000)
+}
+}
+</script>
+<body bgcolor="black" onload="ShowBanners()">
+<center>
+<img src="car1.jpg" width="1060" height="600" name="ChangeBanner"/>
+</center>
+</body>
+</html>

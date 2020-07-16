@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: black;
+     color: white;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+<script>
+function myFunction() {
+    window.open("menutry.html");
+}
+
+function myFunction1() {
+    window.open("login1.html");
+}
+function credit(){
+window.open("credit1.html");
+}
+function exiting(){
+alert("press alt+f4 to quit the game");
+}
+            
+			
+</script>
+
+</head>
+<body >
+
+
+<h2>Press Home to start the game</h2>
+
+<button class="button" onclick="myFunction()"><span>HOME </span></button>
+<button class="button" onclick="myFunction1()"><span>LOG IN</span></button>
+<button class="button" onclick="credit()"><span>CREDITS</span></button>
+<button class="button" onclick="exiting()"><span>QUIT GAME</span></button>
+</body>
+</html>
